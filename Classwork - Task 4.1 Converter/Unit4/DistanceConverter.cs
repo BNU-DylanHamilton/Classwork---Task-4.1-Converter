@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Classwork___Task_4._1_Converter.Unit4
+namespace CO453_Part_A.Unit4
 {
     /// <summary>
     /// This class will convert miles to whole feet
