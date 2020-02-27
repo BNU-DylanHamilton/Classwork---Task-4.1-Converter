@@ -31,6 +31,7 @@ namespace CO453_Part_A.SPF
             {
                 GetPlayerChoice();
                 game.GetComputerChoice();
+                //game.ComputerChoice = RPS_Choices.PAPER;
 
                 ShowChoices();
 
@@ -153,25 +154,38 @@ namespace CO453_Part_A.SPF
         /// </summary>
         private void ShowResult()
         {
-            Console.WriteLine("\tThe player score = " + game.PlayerScore);
+            Console.WriteLine("\t" + game.PlayerName + "'s score = " + game.PlayerScore);
             Console.WriteLine("\tThe Computer score = " + game.ComputerScore);
+
+            if (game.WinnerName == game.PlayerName)
+            {
+                Console.WriteLine("\t" + game.PlayerName + " has won this round!");
+            }
+            else if (game.WinnerName == RPS_Game.COMPUTER_NAME)
+            {
+                Console.WriteLine("\t" + RPS_Game.COMPUTER_NAME + " has won this round");
+            }
+            else
+            {
+                Console.WriteLine("\t You have drawn!");
+            }
+
 
             if (game.PlayerScore > game.ComputerScore)
             {
                 game.WinnerName = game.PlayerName;
-                Console.WriteLine("\tThe player has won ");
             }
             else if (game.ComputerScore > game.PlayerScore)
             {
                 game.WinnerName = RPS_Game.COMPUTER_NAME;
-                Console.WriteLine("\tThe computer has won ");
             }
             else
             {
                 game.WinnerName = "you have drawn!";
             }
+
             Console.WriteLine();
-            Console.WriteLine("\tThe current winner is the " + game.WinnerName);
+            Console.WriteLine("\tThe current winner is " + game.WinnerName);
         }
 
 
