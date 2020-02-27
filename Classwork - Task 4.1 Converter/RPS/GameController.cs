@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CO453_Part_A.SPF
+namespace CO453_Part_A.RPS
+
 {
     /// <summary>
     /// Thuis class will handle the input and output
-    /// of the SPS Game
+    /// of the RPS Game
     /// </summary>
     public class GameController
     {
-        public static string Title = "Scissors-Paper-Stone Game";
+        public static string Title = "Rock-Paper-Scissors Game";
 
         public const string ROCK = "ROCK";
         public const string PAPER = "PAPER";

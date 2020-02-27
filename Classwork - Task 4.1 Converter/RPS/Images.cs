@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CO453_Part_A.SPF
+namespace CO453_Part_A.RPS
 {
     /// <summary>
     /// This class will set all of the 

@@ -10,8 +10,8 @@ namespace CO453_Part_A
             //TestBook();
             //TestTournament();
             //TestMP3Chart();
-            //TestBMI();
-            TestRPS_Game();
+            TestBMI();
+            //TestRPS_Game();
         }
 
         private static void TestDistanceConverter()
@@ -57,8 +57,18 @@ namespace CO453_Part_A
         {
             Unit4.HorrorStory Book = new Unit4.HorrorStory();
 
-            Book.GetDetails();
+            string details;
+
+            Console.Write("Would you like to enter your own details? (y/n) ");
+            details = Console.ReadLine();
+
+            if(details == "y")
+            {
+                Book.GetDetails();
+            }
+
             Book.WriteChapter1();
+            Book.writeChapter2();
         }
 
         private static void TestTournament()
@@ -93,12 +103,16 @@ namespace CO453_Part_A
 
         private static void TestBMI()
         {
+            Unit4.BMI BMI = new Unit4.BMI();
 
+            BMI.GetDetails();
+            BMI.CalculateBMI();
+            BMI.DisplayBMI();
         }
 
         private static void TestRPS_Game()
         {
-            SPF.GameController controller = new SPF.GameController();
+            RPS.GameController controller = new RPS.GameController();
             controller.RunGame();
         }
     }

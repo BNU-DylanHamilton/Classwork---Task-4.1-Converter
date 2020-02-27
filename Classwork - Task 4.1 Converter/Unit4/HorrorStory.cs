@@ -21,8 +21,6 @@ namespace CO453_Part_A.Unit4
         /// <summary>
         /// Prompt the user for an answer as a string and return it
         /// </summary>
-        /// <param name="prompt"></param>
-        /// <returns>answer</returns>
         public string Ask(string prompt)
         {
             string answer;
@@ -32,12 +30,11 @@ namespace CO453_Part_A.Unit4
         }
 
         /// <summary>
-        /// Get the details of the author, name, town, animal
-        /// job and weapon used in the books stories
+        /// Get the details of the name, town, animal, job
+        /// weapon, gender, companion and location used in the books stories
         /// </summary>
         public void GetDetails() // keep using ask() to get information
         {
-            author = Ask("Please type your name : ");
             name = Ask("Please type a friend's name : ");
             town = Ask("Now give me the name of a town : ");
             animal = Ask("Now a type of animal : ");
@@ -68,6 +65,8 @@ namespace CO453_Part_A.Unit4
 
             Console.WriteLine("In the shadow of a doorway, a demented " + job
                 + " waited, clutching a menacing " + weapon);
+
+            Console.WriteLine();
         }
 
         /// <summary>
@@ -91,12 +90,19 @@ namespace CO453_Part_A.Unit4
 
         public void writeChapter2()
         {
-            Console.WriteLine("When ");
+            Console.WriteLine("When " + name + " entered through the doorway, they avoided" +
+                " an attack from the " + job + ".");
+
+            Console.WriteLine("All of a sudden a random person came rushing in and saved " + name + 
+                ", they came over and introduced themselves as " + companion + ".");
+            
+            Console.WriteLine("From then on the two were inseparable and they set out on their " +
+                "journey to " + location + ".");
         }
 
         public HorrorStory()
         {
-            author = "Dylan";
+            author = SimpleIO.AUTHOR;
             name = "Rhys";
             town = "Aylesbury";
             animal = "wolves";
