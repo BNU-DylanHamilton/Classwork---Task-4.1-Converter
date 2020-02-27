@@ -73,7 +73,7 @@ namespace CO453_Part_A.Unit4
         /// This method checks the gender that the user supplies
         /// and then places the correct gender value in the story.
         /// </summary>
-        public string checkGender(string gender)
+        private string checkGender(string gender)
         {
             string answer;
 
@@ -88,7 +88,7 @@ namespace CO453_Part_A.Unit4
             return answer;
         }
 
-        public void writeChapter2()
+        public void WriteChapter2()
         {
             Console.WriteLine("When " + name + " entered through the doorway, they avoided" +
                 " an attack from the " + job + ".");

@@ -7,6 +7,7 @@ namespace CO453_Part_A.RPS
     /// <summary>
     /// This class will set all of the 
     /// drawings used throughout the game.
+    /// 
     /// Author: Dylan Hamilton
     /// </summary>
     public static class Images

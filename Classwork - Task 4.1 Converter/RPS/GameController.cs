@@ -6,8 +6,10 @@ namespace CO453_Part_A.RPS
 
 {
     /// <summary>
-    /// Thuis class will handle the input and output
+    /// This class will handle the input and output
     /// of the RPS Game
+    /// 
+    /// Author: Dylan Hamilton
     /// </summary>
     public class GameController
     {

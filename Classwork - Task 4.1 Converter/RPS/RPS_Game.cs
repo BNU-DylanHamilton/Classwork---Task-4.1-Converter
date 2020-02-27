@@ -20,10 +20,10 @@ namespace CO453_Part_A.RPS
     }
 
     /// <summary>
-    /// This class plays ...
+    /// This class does the scoring system and will
+    /// also generate the computers choice.
+    /// 
     /// Author: Dylan Hamilton
-    /// Started: 12/02/2019
-    /// Modified : 26/02/2020
     /// </summary>
     public class RPS_Game
     {

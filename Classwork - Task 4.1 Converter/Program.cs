@@ -68,7 +68,7 @@ namespace CO453_Part_A
             }
 
             Book.WriteChapter1();
-            Book.writeChapter2();
+            Book.WriteChapter2();
         }
 
         private static void TestTournament()

@@ -8,7 +8,8 @@ namespace CO453_Part_A.Unit5
     /// Task 5.2 Class Example
     /// This class get votes for an array of song titles currently
     /// in the top ten uk chart
-    /// Dylan Hamilton
+    /// 
+    /// Author: Dylan Hamilton
     /// </summary>
     public class MP3Chart
     {

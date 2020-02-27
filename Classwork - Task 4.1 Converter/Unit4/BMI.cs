@@ -4,6 +4,10 @@ using System.Text;
 
 namespace CO453_Part_A.Unit4
 {
+    /// <summary>
+    /// This class works out the BMI of the user
+    /// in both imperial and metric measurements.
+    /// </summary>
     class BMI
     {
         private double weight, height, bmi;
@@ -44,6 +48,10 @@ namespace CO453_Part_A.Unit4
             }
         }
 
+        /// <summary>
+        /// This method will work out the BMI according to
+        /// which measurements were chosen by the user.
+        /// </summary>
         public void CalculateBMI()
         {
             if(measurement == "metric")
@@ -56,6 +64,9 @@ namespace CO453_Part_A.Unit4
             }
         }
 
+        /// <summary>
+        /// This method displays what the BMI says about the user.
+        /// </summary>
         public void DisplayBMI()
         {
             Console.WriteLine("Your BMI is " + bmi);
