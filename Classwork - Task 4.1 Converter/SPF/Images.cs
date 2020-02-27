@@ -5,10 +5,9 @@ using System.Text;
 namespace CO453_Part_A.SPF
 {
     /// <summary>
-    /// This class will...
+    /// This class will set all of the 
+    /// drawings used throughout the game.
     /// Author: Dylan Hamilton
-    /// Started:
-    /// Last Update:
     /// </summary>
     public static class Images
     {

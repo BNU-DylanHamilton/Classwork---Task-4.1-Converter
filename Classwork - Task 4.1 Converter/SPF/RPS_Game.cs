@@ -21,7 +21,7 @@ namespace CO453_Part_A.SPF
 
     /// <summary>
     /// This class plays ...
-    /// Author: Dylan
+    /// Author: Dylan Hamilton
     /// Started: 12/02/2019
     /// Modified : 26/02/2020
     /// </summary>
@@ -47,15 +47,6 @@ namespace CO453_Part_A.SPF
             WinnerName = "Unkown";
             PlayerScore = 0;
             ComputerScore = 0;
-        }
-
-        /// <summary>
-        /// *******************************************************
-        /// 
-        /// *******************************************************
-        /// </summary>
-        public void End()
-        {
         }
 
         /// <summary>

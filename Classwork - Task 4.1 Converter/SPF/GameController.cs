@@ -43,13 +43,13 @@ namespace CO453_Part_A.SPF
                 Console.ReadKey();
             }
 
-            game.End();
-
             EndGame();
         }
 
         /// <summary>
-        /// 
+        /// This methods displays the overall winner
+        /// and then puts the correct drawing for a win,
+        /// draw or loss.
         /// </summary>
         private void EndGame()
         {
@@ -57,12 +57,24 @@ namespace CO453_Part_A.SPF
             SimpleIO.WriteTitle(Title, "Week 3");
 
             Console.WriteLine("The overall winner is " + game.WinnerName);
+
+            if(game.WinnerName == game.PlayerName)
+            {
+                Images.DrawThumbsUp();
+            }
+            else if(game.WinnerName == RPS_Game.COMPUTER_NAME)
+            {
+                Images.DrawThumbsDown();
+            }
+            else
+            {
+                Images.DrawSmile();
+            }
         }
 
         /// <summary>
-        /// *******************************************************
-        /// 
-        /// *******************************************************
+        /// This method gets the players choice,
+        /// and shows the round number.
         /// </summary>
         private void GetPlayerChoice()
         {
@@ -133,9 +145,8 @@ namespace CO453_Part_A.SPF
         }
 
         /// <summary>
-        /// *******************************************************
-        /// 
-        /// *******************************************************
+        /// This method shows the choices made by the user
+        /// and the computer.
         /// </summary>
         private void ShowChoices()
         {
@@ -148,15 +159,13 @@ namespace CO453_Part_A.SPF
         }
 
         /// <summary>
-        /// *******************************************************
-        /// 
-        /// *******************************************************
+        /// This method shows the winner of the round
+        /// or if the player and computer drew, and then 
+        /// it shows the current winner of the game with 
+        /// both players scores.
         /// </summary>
         private void ShowResult()
         {
-            Console.WriteLine("\t" + game.PlayerName + "'s score = " + game.PlayerScore);
-            Console.WriteLine("\tThe Computer score = " + game.ComputerScore);
-
             if (game.WinnerName == game.PlayerName)
             {
                 Console.WriteLine("\t" + game.PlayerName + " has won this round!");
@@ -185,14 +194,15 @@ namespace CO453_Part_A.SPF
             }
 
             Console.WriteLine();
+            Console.WriteLine("\t" + game.PlayerName + "'s score = " + game.PlayerScore);
+            Console.WriteLine("\tThe Computer score = " + game.ComputerScore);
             Console.WriteLine("\tThe current winner is " + game.WinnerName);
         }
 
 
         /// <summary>
-        /// *******************************************************
-        /// 
-        /// *******************************************************
+        /// This method sets the window size
+        /// and the colours of the game.
         /// </summary>
         private void SetupScreen()
         {
@@ -208,9 +218,8 @@ namespace CO453_Part_A.SPF
         }
 
         /// <summary>
-        /// *******************************************************
-        /// 
-        /// *******************************************************
+        /// This method starts the game
+        /// and sets the player name.
         /// </summary>
         private void StartGame()
         {
