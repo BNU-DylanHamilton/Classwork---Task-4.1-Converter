@@ -8,11 +8,13 @@ namespace CO453_Part_A
         {
             //TestDistanceConverter();
             //TestBook();
-            //Tournament();
-            //MP3Chart();
+            //TestTournament();
+            //TestMP3Chart();
+            //TestBMI();
+            TestRPS_Game();
         }
 
-        public static void TestDistanceConverter()
+        private static void TestDistanceConverter()
         {
             double miles, feet;
             string outcome = "";
@@ -51,7 +53,7 @@ namespace CO453_Part_A
             } while (outcome != "miles" && outcome != "feet");
         }
 
-        public static void TestBook()
+        private static void TestBook()
         {
             Unit4.HorrorStory Book = new Unit4.HorrorStory();
 
@@ -59,7 +61,7 @@ namespace CO453_Part_A
             Book.WriteChapter1();
         }
 
-        private static void Tournament()
+        private static void TestTournament()
         {
             Unit5.Tournament tournament = new Unit5.Tournament();
 
@@ -68,7 +70,7 @@ namespace CO453_Part_A
             tournament.ShowBest();
         }
 
-        private static void MP3Chart()
+        private static void TestMP3Chart()
         {
             Unit5.MP3Chart chart = new Unit5.MP3Chart();
 
@@ -87,6 +89,17 @@ namespace CO453_Part_A
             }
             
             chart.ShowVotes();
+        }
+
+        private static void TestBMI()
+        {
+
+        }
+
+        private static void TestRPS_Game()
+        {
+            SPF.GameController controller = new SPF.GameController();
+            controller.RunGame();
         }
     }
 }
