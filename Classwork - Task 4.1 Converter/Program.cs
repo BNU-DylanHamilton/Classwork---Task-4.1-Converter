@@ -10,11 +10,13 @@ namespace CO453_Part_A
             //TestBook();
             //TestTournament();
             //TestMP3Chart();
-            TestBMI();
+            //TestBMI();
             //TestRPS_Game();
+            //TestBatesMotel();
+            TestTrafficSurvey();
         }
 
-        private static void TestDistanceConverter()
+        public static void TestDistanceConverter()
         {
             double miles, feet;
             string outcome = "";
@@ -53,7 +55,7 @@ namespace CO453_Part_A
             } while (outcome != "miles" && outcome != "feet");
         }
 
-        private static void TestBook()
+        public static void TestBook()
         {
             Unit4.HorrorStory Book = new Unit4.HorrorStory();
 
@@ -71,7 +73,7 @@ namespace CO453_Part_A
             Book.WriteChapter2();
         }
 
-        private static void TestTournament()
+        public static void TestTournament()
         {
             Unit5.Tournament tournament = new Unit5.Tournament();
 
@@ -80,7 +82,7 @@ namespace CO453_Part_A
             tournament.ShowBest();
         }
 
-        private static void TestMP3Chart()
+        public static void TestMP3Chart()
         {
             Unit5.MP3Chart chart = new Unit5.MP3Chart();
 
@@ -101,7 +103,7 @@ namespace CO453_Part_A
             chart.ShowVotes();
         }
 
-        private static void TestBMI()
+        public static void TestBMI()
         {
             Unit4.BMI BMI = new Unit4.BMI();
 
@@ -110,10 +112,45 @@ namespace CO453_Part_A
             BMI.DisplayBMI();
         }
 
-        private static void TestRPS_Game()
+        public static void TestRPS_Game()
         {
             RPS.GameController controller = new RPS.GameController();
             controller.RunGame();
+        }
+
+        public static void TestBatesMotel()
+        {
+            Unit5.BatesMotel motel = new Unit5.BatesMotel();
+
+            SimpleIO.WriteTitle("The Bates Motel", "Task 5.6");
+
+            string[] choices =
+            {
+                "1. Book a Room",
+                "2. Vacate a Room",
+                "3. Display All Rooms",
+                "4. Vacate All Rooms",
+                "5. Quit"
+            };
+
+            int choice = SimpleIO.GetChoice(choices);
+
+            switch (choice)
+            {
+                case 1:
+                    motel.Book(1, 2);
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        public static void TestTrafficSurvey()
+        {
+            Unit5.TrafficSurvey survey = new Unit5.TrafficSurvey();
+
+
         }
     }
 }
