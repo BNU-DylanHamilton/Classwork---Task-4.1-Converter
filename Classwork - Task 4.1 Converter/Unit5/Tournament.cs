@@ -85,12 +85,5 @@ namespace CO453_Part_A.Unit5
                 Console.WriteLine(names[i] + " scored " + scores[i]);
             }
         }
-
-        public void ShowBest()
-        {
-            SimpleIO.WriteTitle("Show Best Tournament Score", "Task 5.3");
-
-
-        }
     }
 }

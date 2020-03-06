@@ -11,9 +11,9 @@ namespace CO453_Part_A
             //TestTournament();
             //TestMP3Chart();
             //TestBMI();
-            //TestRPS_Game();
+            TestRPS_Game();
             //TestBatesMotel();
-            TestTrafficSurvey();
+            //TestTrafficSurvey();
             //TestBubbleSort();
         }
 
@@ -62,6 +62,8 @@ namespace CO453_Part_A
 
             string details;
 
+            SimpleIO.WriteTitle("Horror Story", "4.3");
+
             Console.Write("Would you like to enter your own details? (y/n) ");
             details = Console.ReadLine();
 
@@ -80,7 +82,6 @@ namespace CO453_Part_A
 
             tournament.GetDetails();
             tournament.ShowScores();
-            tournament.ShowBest();
         }
 
         public static void TestMP3Chart()
