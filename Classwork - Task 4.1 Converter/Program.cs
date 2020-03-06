@@ -14,6 +14,7 @@ namespace CO453_Part_A
             //TestRPS_Game();
             //TestBatesMotel();
             TestTrafficSurvey();
+            //TestBubbleSort();
         }
 
         public static void TestDistanceConverter()
@@ -150,7 +151,17 @@ namespace CO453_Part_A
         {
             Unit5.TrafficSurvey survey = new Unit5.TrafficSurvey();
 
+            survey.TrafficCount();
+            survey.ShowTotal();
+        }
 
+        public static void TestBubbleSort()
+        {
+            Unit5.BubbleSort sorting = new Unit5.BubbleSort();
+
+            sorting.InputNumbers();
+            sorting.SortNumbers();
+            sorting.Display();
         }
     }
 }
